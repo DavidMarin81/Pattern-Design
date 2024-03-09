@@ -1,0 +1,9 @@
+https://www.tutorialspoint.com/design_pattern/singleton_pattern.htm
+
+El patrón Singleton es un diseño de software que garantiza que una clase tenga solo una instancia y proporciona un punto de acceso global a esa instancia. En otras palabras, Singleton garantiza que solo haya una instancia de una clase en todo el programa y proporciona un mecanismo para acceder a esa instancia única desde cualquier parte del programa.
+
+Este patrón es útil cuando solo se necesita una única instancia de una clase para coordinar acciones en todo el sistema, como en el caso de administradores de recursos compartidos, registros, conexiones de bases de datos, entre otros.
+
+La implementación típica del patrón Singleton implica definir un constructor privado para la clase y proporcionar un método estático que devuelva la instancia única. Además, esta instancia única se crea la primera vez que se llama al método estático y se reutiliza en todas las llamadas subsiguientes.
+
+Es importante tener en cuenta que el patrón Singleton puede ser implementado de diversas maneras, pero en todas ellas el objetivo principal es garantizar la existencia de una única instancia de una clase durante la vida útil de la aplicación. Sin embargo, su uso excesivo puede llevar a problemas de acoplamiento y dificultades en el mantenimiento del código, por lo que debe ser utilizado con prudencia.

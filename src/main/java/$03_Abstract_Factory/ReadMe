@@ -1,0 +1,17 @@
+Patron de diseño -> Abstract Factory
+
+Abstract Factory es un patrón de diseño creacional que proporciona una interfaz
+para crear familias de objetos relacionados o dependientes sin especificar sus clases concretas.
+
+Supongamos que estamos construyendo un juego de rol y necesitamos manejar diferentes tipos de personajes,
+como guerreros y magos, que pertenecen a diferentes razas, como humanos y elfos.
+Utilizaremos el patrón Abstract Factory para crear diferentes fábricas que producirán personajes de diferentes razas y clases
+
+Character es la interfaz para los productos de personajes,
+mientras que CharacterFactory es la interfaz para la fábrica de personajes.
+Luego, tenemos implementaciones concretas para los productos (como HumanWarrior, ElfMage, etc.)
+y las fábricas (como HumanFactory, ElfFactory).
+
+Finalmente, en el cliente (Main):
+    creamos instancias de fábricas concretas y utilizamos sus métodos para crear diferentes tipos de personajes.
+    Este patrón nos permite cambiar fácilmente las familias de productos sin modificar el código del cliente.

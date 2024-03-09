@@ -1,0 +1,18 @@
+Patrón de Diseño -> Factory
+
+1.- Interfaz Card: Esta es la interfaz común para todas las cartas.
+    Define el método public String cardType(), que debe ser implementado por todas las clases que representan diferentes tipos de cartas.
+
+2.- Clases concretas MonsterCard y SpellCard:
+    Estas son las implementaciones concretas de la interfaz Card.
+    Cada una de estas clases proporciona una implementación del método cardType() para devolver el tipo específico de carta.
+
+3.- Fábrica de cartas CardFactory:
+    Esta es la clase responsable de crear instancias de diferentes tipos de cartas.
+    Tiene un método createCard() que toma un argumento cardType y devuelve una instancia de la clase correspondiente.
+
+Ejemplo de uso en Main:
+    En el método main:
+        creamos una instancia de la fábrica de cartas.
+        Luego utilizamos esta fábrica para crear instancias de diferentes tipos de cartas (MonsterCard y SpellCard).
+        Finalmente, imprimimos el tipo de cada carta.

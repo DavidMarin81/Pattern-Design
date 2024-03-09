@@ -1,0 +1,31 @@
+1.- Producto
+    La clase "Pizza" es el objeto que queremos construir.
+    Proporciona métodos para estableces cada una de sus propiedad (masa, salsa e ingredientes)
+    Proporciona el método display para mostrar los detalles
+
+2.- Inteface IPIzzaBuilder
+    La interface "PizzaBuilder" define métodos para construir partes del objeto.
+    Los métodos:
+        - crearMasa
+        - crearSalsa
+        - crearIngrediente
+    que serán implementados por los constructores concretos
+
+3.- ConcreteBuilder
+    Las clases "HawaiianPizzaBuilder" y "SpicyPizzaBuilder" son implementaciones concretas de la interface "IPizzaBuilder"
+    Cada constructor tiene su propia lógica para construir una pizza concreta.
+    Los constructores tambien tienen un método "getPizza" que devuelve la pizza construida
+
+4.- Director
+    La clase "Director" actúa con el director y coordina el proceso de construcción de la pizza
+    Tiene el método "setPizzaBuilder" para establecer un constructor concreto y un método "ConstruirPizza".
+    También tiene un método "getPizza" para obtener la pizza construida.
+
+5.- Clase Principal (Main)
+    Se crea un objeto "Director", que será el responsable de la construcción de la pizza
+    Creamos dos constructores concretos: HawaiianPizzaBuilder y SpicyPizzaBuilder
+    Establecemos un constructor concreto en el "Director" y construimos una pizza usando "construirPizza"
+    Repetimos el proceso con el otro constructor concreto.
+
+El patrón de diseño "Builder" nos permite construir objetos complejos paso a paso, ocultando la complejidad de la construcción
+y proporcionando diferentes formas de construir el mismo objeto.

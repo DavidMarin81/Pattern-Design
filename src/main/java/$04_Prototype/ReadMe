@@ -1,0 +1,6 @@
+El patrón de diseño Prototype se utiliza para crear nuevos objetos clonándolos a partir
+de un prototipo existente en lugar de crearlos desde cero.
+
+Esto es útil cuando la creación de objetos es costosa en términos de recursos o compleja en su implementación.
+
+Al clonar un prototipo, se evita el proceso de inicialización repetitivo y se mejora la eficiencia del sistema.

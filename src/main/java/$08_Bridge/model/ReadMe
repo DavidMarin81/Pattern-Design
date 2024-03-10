@@ -1,0 +1,17 @@
+El patrón Bridge es un patrón de diseño estructural que separa la abstracción de su implementación,
+de manera que ambos puedan variar independientemente.
+
+Esto se logra creando una interfaz que actúa como puente entre la abstracción y la implementación,
+permitiendo que ambas evolucionen por separado
+
+En este ejemplo, Forma es la abstracción, y Color es la implementación.
+
+Las clases Cuadrado y Círculo son las implementaciones concretas de las formas geométricas,
+mientras que Rojo y Verde son las implementaciones concretas de los colores.
+
+El patrón Bridge permite que las formas geométricas y los colores varíen independientemente.
+
+Por ejemplo, si deseamos agregar más formas geométricas o colores,
+simplemente creamos nuevas implementaciones concretas y las combinamos en tiempo de ejecución.
+
+Esto hace que el sistema sea más flexible y fácil de mantener.

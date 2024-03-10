@@ -1,0 +1,21 @@
+El patrón de diseño Flyweight se utiliza para minimizar el uso de la memoria o el almacenamiento,
+al compartir lo máximo posible entre objetos similares.
+
+Esto se logra mediante la extracción de datos comunes a un objeto compartido,
+lo que reduce la duplicación de datos y mejora la eficiencia.
+
+Un ejemplo común del patrón Flyweight es la representación de caracteres en un editor de texto.
+En lugar de crear un objeto para cada instancia de un carácter,
+podríamos usar un conjunto limitado de objetos compartidos para representar los caracteres y almacenar
+solo las diferencias individuales.
+
+Esto ahorra memoria y mejora el rendimiento.
+
+En este ejemplo:
+    - Caracter es la interfaz Flyweight que define la operación común para mostrar un carácter.
+    - CaracterCompartido es la implementación concreta de Caracter que representa un carácter compartido.
+    - FabricaCaracteres es la fábrica Flyweight que gestiona y devuelve los caracteres compartidos.
+    - En el método main, creamos una instancia de FabricaCaracteres y obtenemos caracteres compartidos.
+        Luego, mostramos los caracteres con diferentes tamaños.
+        Observa cómo el carácter 'a' se reutiliza cuando se solicita dos veces.
+        Esto demuestra cómo el patrón Flyweight conserva memoria al compartir objetos similares.

@@ -1,0 +1,21 @@
+El patrón Decorator es un patrón de diseño estructural que te permite
+    - agregar funcionalidad adicional
+    - modificar el comportamiento de un objeto dinámicamente sin afectar a otros objetos de la misma clase.
+
+Esto se logra envolviendo el objeto original dentro de uno o más decoradores
+que implementan la misma interfaz que el objeto original.
+
+Cada decorador añade su propia funcionalidad y luego delega el resto del trabajo al objeto original.
+
+Para el ejemplo del coche, supongamos que tienes una clase Coche que representa un coche básico
+y quieres añadirle características adicionales como:
+    - sistema de navegación
+    - asientos de cuero
+utilizando el patrón Decorator.
+
+En este ejemplo:
+    - Coche es la interfaz que define las operaciones básicas de un coche.
+    - CocheBasico es la implementación básica de un coche.
+    - Decorador es la clase abstracta que implementa la interfaz Coche y contiene una referencia al objeto Coche que está siendo decorado.
+    - SistemaDeNavegacion y AsientosDeCuero son decoradores concretos que añaden funcionalidad adicional a un coche básico.
+    - En el método main, se crea un coche básico y luego se envuelve en diferentes decoradores para añadir características adicionales.

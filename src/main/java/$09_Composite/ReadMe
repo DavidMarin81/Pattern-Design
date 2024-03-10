@@ -1,0 +1,34 @@
+El patrón Composite es un patrón de diseño estructural que permite
+componer objetos en estructuras de árbol para representar jerarquías parte-todo.
+
+Esto significa que puedes tratar tanto a los objetos individuales como a las composiciones de objetos de la misma manera.
+
+El objetivo principal del patrón Composite es permitir que los clientes trabajen con las estructuras de objetos de manera uniforme,
+sin importar si están tratando con un objeto individual o un grupo de objetos.
+
+El patrón Composite generalmente involucra tres componentes principales:
+
+    - Componente:
+        Define la interfaz común para todos los componentes en la estructura.
+        Esto podría ser una interfaz o una clase abstracta que declare operaciones comunes que deben ser
+        implementadas por las hojas (objetos individuales) y los compuestos (grupos de objetos).
+
+    - Hoja (Leaf):
+        Representa los objetos individuales en la estructura.
+        Las hojas no tienen hijos y generalmente implementan las operaciones definidas en el componente.
+
+    - Compuesto:
+        Representa las composiciones de objetos en la estructura.
+        Los compuestos contienen una colección de componentes (pueden ser hojas u otros compuestos)
+        y proporcionan implementaciones para las operaciones definidas en el componente.
+        Estas implementaciones suelen delegar las operaciones a los componentes hijos.
+
+Algunas de las ventajas del patrón Composite incluyen:
+
+    - Simplifica el código cliente al permitir tratar tanto a los objetos individuales como a las composiciones de objetos de la misma manera.
+    - Permite agregar o eliminar objetos de manera dinámica en la estructura sin afectar al código cliente.
+    - Facilita la creación de estructuras complejas de objetos mediante la composición recursiva.
+
+En resumen, el patrón Composite es útil cuando necesitas representar estructuras jerárquicas parte-todo
+y quieres que el código cliente interactúe de manera uniforme con todos los elementos de la estructura.
+Es particularmente útil en situaciones donde la complejidad de la estructura puede variar y necesitas una forma flexible de manejarla.

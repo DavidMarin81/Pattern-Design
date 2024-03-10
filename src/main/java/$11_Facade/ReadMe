@@ -1,0 +1,30 @@
+El patrón de diseño Facade:
+    - actúa como un punto de entrada único para el cliente,
+    ocultando la complejidad de los subsistemas detrás de una interfaz más fácil de usar.
+
+    - Permite al cliente interactuar con el sistema de manera más sencilla,
+    al encapsular la lógica interna y proporcionar una interfaz coherente.
+
+    - Facade promueve el principio de separación de preocupaciones,
+    al evitar que el cliente tenga que conocer los detalles internos de los subsistemas.
+
+    - Es útil cuando se necesita proporcionar una interfaz simplificada para una funcionalidad compleja,
+    mejorando así la modularidad y mantenibilidad del código.
+
+En este ejemplo:
+
+    - Tenemos tres subsistemas:
+        - ReservasVuelos
+        - DisponibilidadVuelos
+        - GeneradorBoletos
+        que manejan:
+            - las reservas de vuelos
+            - la verificación de disponibilidad
+            - la generación de boletos, respectivamente.
+
+La clase SistemaGestionVuelos actúa como una fachada que proporciona una interfaz simplificada
+para realizar reservas de vuelos.
+
+Internamente, delega las llamadas a los métodos apropiados de los subsistemas.
+
+Esto oculta la complejidad de los subsistemas al cliente.
